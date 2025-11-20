@@ -22,101 +22,113 @@
 </head>
 <body class="bg-gray-100 text-gray-800 antialiased">
 
-  <!-- Hero / Header -->
-  <header class="relative bg-custom-black text-custom-white">
-    <div class="container mx-auto px-4 py-16 text-center">
-      <img src="assets/logo1.svg" alt="Breisgau Automobile Logo"
-           class="mx-auto mb-6 max-w-[500px] max-h-[205px]" />
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Breisgau Automobile</h1>
-      <p class="mt-3 text-lg italic text-custom-red">„Ihr Wohl ist unsere Zufriedenheit“</p>
-      <p class="mt-6 max-w-2xl mx-auto text-gray-300">
-        Ihr zuverlässiger Partner für Gebrauchtwagen, Beratung und Service im Raum Freiburg &amp; Südbaden.
-      </p>
-      <div class="mt-8 flex justify-center gap-4">
-        <a href="#kontakt" class="inline-block bg-white text-custom-black px-6 py-3 rounded-full font-semibold border border-custom-red hover:bg-custom-red hover:text-white transition">
-          Kontakt aufnehmen
-        </a>
-        <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank"
-           class="inline-block bg-custom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">
-          Fahrzeuge auf mobile.de
-        </a>
+  <!-- Hero -->
+  <header class="relative bg-cover bg-center" style="background-image: url('https://via.placeholder.com/1920x800');">
+    <div class="bg-black/60">
+      <div class="container mx-auto px-4 py-32 text-center text-custom-white">
+        <img src="assets/logo1.svg" alt="Breisgau Automobile Logo" class="mx-auto mb-6 max-w-[400px]" />
+        <h1 class="text-5xl sm:text-6xl font-bold tracking-tight mb-4">Breisgau Automobile</h1>
+        <p class="text-xl italic text-custom-red mb-6">„Ihr Wohl ist unsere Zufriedenheit“</p>
+        <div class="flex justify-center gap-4">
+          <a href="#kontakt" class="inline-block bg-custom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">Kontakt aufnehmen</a>
+          <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank" class="inline-block bg-white text-custom-black px-6 py-3 rounded-full font-semibold border border-custom-red hover:bg-custom-red hover:text-white transition">Fahrzeuge auf mobile.de</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Über uns -->
+    <!-- Über uns / Storytelling -->
     <section class="container mx-auto px-4 py-16 max-w-6xl">
-      <div class="bg-white p-8 rounded-2xl shadow">
-        <h2 class="text-3xl font-bold mb-6 text-custom-red">Über uns</h2>
-        <p class="text-lg leading-relaxed mb-6">
-          Bei <strong>Breisgau Automobile</strong> stehen Qualität, Transparenz und Kundenzufriedenheit im Mittelpunkt.
-          Wir bieten Ihnen eine sorgfältig ausgewählte Palette an gepflegten Gebrauchtwagen aller Marken und Preisklassen.
-          Vom ersten Beratungsgespräch bis zur Fahrzeugübergabe begleiten wir Sie persönlich und kompetent.
-        </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <ul class="space-y-3 text-lg">
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> An- und Verkauf von Fahrzeugen</li>
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Vermittlung &amp; individuelle Beratung</li>
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Werkstattorganisation &amp; TÜV-Abnahmen</li>
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Fahrzeugaufbereitung &amp; Überführungen</li>
-          </ul>
-          <ul class="space-y-3 text-lg">
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Unterstützung bei Finanzierung &amp; Versicherung</li>
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Transparente Fahrzeughistorie &amp; faire Preise</li>
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Kurze Wege, schnelle Kommunikation &amp; regional verankert</li>
-            <li class="flex items-start"><span class="text-custom-red mr-2">✔</span> Persönlicher Service auch nach dem Kauf</li>
-          </ul>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <img src="https://via.placeholder.com/600x400" alt="Team und Werkstatt" class="rounded-2xl shadow-lg">
+        <div>
+          <h2 class="text-3xl font-bold mb-6 text-custom-red">Wer wir sind</h2>
+          <p class="text-lg mb-4">Seit über 15 Jahren steht <strong>Breisgau Automobile</strong> für Vertrauen, Qualität und persönliche Beratung. Unser Team begleitet Sie von der Auswahl bis zur Übergabe Ihres Fahrzeugs – fair, transparent und kompetent.</p>
+          <p class="text-lg mb-4">Unsere Philosophie: Jeder Kunde ist einzigartig. Deshalb nehmen wir uns Zeit für individuelle Beratung und stellen sicher, dass Sie das perfekte Fahrzeug finden.</p>
+          <a href="#kontakt" class="inline-block mt-4 bg-custom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">Jetzt beraten lassen</a>
         </div>
       </div>
     </section>
 
-    <!-- Unsere Werte / Vorteile -->
-    <section class="container mx-auto px-4 pb-16 max-w-6xl">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-8 rounded-2xl shadow">
+    <!-- Galerie / Fahrzeuge -->
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-3xl font-bold mb-8 text-center text-custom-red">Unsere Fahrzeuge</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://via.placeholder.com/400x300" alt="Fahrzeug 1" class="w-full">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">BMW 320i</h3>
+              <p class="text-gray-700">Baujahr 2018, 45.000 km, gepflegt.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://via.placeholder.com/400x300" alt="Fahrzeug 2" class="w-full">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Mercedes C-Klasse</h3>
+              <p class="text-gray-700">Baujahr 2019, 38.000 km, Scheckheftgepflegt.</p>
+            </div>
+          </div>
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="https://via.placeholder.com/400x300" alt="Fahrzeug 3" class="w-full">
+            <div class="p-4">
+              <h3 class="text-xl font-semibold mb-2">Audi A4</h3>
+              <p class="text-gray-700">Baujahr 2020, 30.000 km, Top-Zustand.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank" class="inline-block bg-custom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">Alle Fahrzeuge ansehen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / Vorteile -->
+    <section class="container mx-auto px-4 py-16 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-8 text-center text-custom-red">Unsere Services</h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
           <h3 class="text-xl font-semibold text-custom-red mb-2">Transparenz</h3>
-          <p class="text-gray-700">Jedes Fahrzeug wird ehrlich beschrieben, mit nachvollziehbarer Historie und klaren Konditionen.</p>
+          <p>Jedes Fahrzeug wird ehrlich beschrieben, mit nachvollziehbarer Historie und klaren Konditionen.</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow">
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
           <h3 class="text-xl font-semibold text-custom-red mb-2">Qualität</h3>
-          <p class="text-gray-700">Gepflegte Fahrzeuge, Prüfung durch Partnerwerkstätten und sorgfältige Aufbereitung vor Auslieferung.</p>
+          <p>Gepflegte Fahrzeuge, Prüfung durch Partnerwerkstätten und sorgfältige Aufbereitung vor Auslieferung.</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow">
-          <h3 class="text-xl font-semibold text-custom-red mb-2">Nähe</h3>
-          <p class="text-gray-700">Regional verwurzelt – persönliche Betreuung und schnelle Verfügbarkeit im Raum Freiburg &amp; Südbaden.</p>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-custom-red mb-2">Regionalität</h3>
+          <p>Persönliche Betreuung und schnelle Verfügbarkeit im Raum Freiburg &amp; Südbaden.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-custom-red mb-2">Beratung</h3>
+          <p>Individuelle Kaufberatung, Finanzierungshilfen und Versicherungsempfehlungen.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-custom-red mb-2">Service nach Kauf</h3>
+          <p>Unterstützung bei Wartung, TÜV und Fahrzeugaufbereitung nach dem Kauf.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
+          <h3 class="text-xl font-semibold text-custom-red mb-2">Faire Preise</h3>
+          <p>Transparente Preisgestaltung und faire Angebote ohne versteckte Kosten.</p>
         </div>
       </div>
     </section>
 
-    <!-- Hinweis auf mobile.de -->
-    <section class="bg-white">
-      <div class="container mx-auto px-4 py-16 max-w-6xl text-center">
-        <h2 class="text-3xl font-bold mb-6 text-custom-red">Unsere Angebote</h2>
-        <p class="mb-6 text-lg leading-relaxed">
-          Aktuelle Fahrzeuge finden Sie jederzeit auf unserer Händlerseite bei <strong>mobile.de</strong>.
-        </p>
-        <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank"
-           class="inline-block bg-white text-custom-black font-semibold py-3 px-8 rounded-full border border-custom-red hover:bg-custom-red hover:text-white transition shadow">
-          → Zu unseren Fahrzeugen auf mobile.de
-        </a>
-      </div>
-    </section>
-
-    <!-- Kundenstimmen / Vertrauen -->
-    <section class="container mx-auto px-4 py-16 max-w-6xl">
-      <div class="bg-white p-8 rounded-2xl shadow">
-        <h2 class="text-3xl font-bold mb-6 text-custom-red">Kundenstimmen</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div class="border rounded-xl p-6">
+    <!-- Kundenstimmen -->
+    <section class="bg-gray-50 py-16">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-3xl font-bold mb-8 text-center text-custom-red">Kundenstimmen</h2>
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white p-6 rounded-2xl shadow">
             <p class="text-gray-700">„Sehr nette und kompetente Beratung. Fahrzeug genau wie beschrieben – gerne wieder!“</p>
             <p class="mt-4 text-sm text-gray-500">– M. Schneider, Freiburg</p>
           </div>
-          <div class="border rounded-xl p-6">
+          <div class="bg-white p-6 rounded-2xl shadow">
             <p class="text-gray-700">„Schnelle Abwicklung, faire Preise und super Service auch nach dem Kauf.“</p>
             <p class="mt-4 text-sm text-gray-500">– M. Özdemir, Emmendingen</p>
           </div>
-          <div class="border rounded-xl p-6">
+          <div class="bg-white p-6 rounded-2xl shadow">
             <p class="text-gray-700">„Transparente Kommunikation, alle Unterlagen bereitgestellt. Absolut empfehlenswert.“</p>
             <p class="mt-4 text-sm text-gray-500">– M. Wagner, Bad Krozingen</p>
           </div>
@@ -125,10 +137,10 @@
     </section>
 
     <!-- Kontakt -->
-    <section id="kontakt" class="container mx-auto px-4 pb-16 max-w-6xl">
+    <section id="kontakt" class="container mx-auto px-4 py-16 max-w-6xl">
       <div class="bg-white p-8 rounded-2xl shadow">
         <h2 class="text-3xl font-bold mb-6 text-custom-red">Kontakt</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8 text-lg">
           <div>
             <p class="mb-2"><strong>Adresse:</strong> Bundesstraße 2, 79238 Ehrenkirchen</p>
             <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+4917670786623" class="text-custom-red hover:underline">0176 70786623</a></p>
@@ -139,10 +151,7 @@
             <p>Mo – Fr: 09:00 – 18:00 Uhr</p>
             <p>Sa: 09:00 – 14:00 Uhr</p>
             <div class="mt-6">
-              <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank"
-                 class="inline-block bg-custom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">
-                Zu den Fahrzeugen auf mobile.de
-              </a>
+              <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank" class="inline-block bg-custom-red text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition">Zu den Fahrzeugen</a>
             </div>
           </div>
         </div>
