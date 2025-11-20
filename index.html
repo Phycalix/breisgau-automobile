@@ -6,6 +6,8 @@
   <title>Breisgau Automobile</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     body { font-family: 'Inter', sans-serif; }
     :root {
@@ -16,96 +18,116 @@
     .bg-custom-black { background-color: var(--color-black); }
     .text-custom-white { color: var(--color-white); }
     .text-custom-red { color: var(--color-red); }
-    .border-custom-red { border-color: var(--color-red); }
-    .text-custom-black { color: var(--color-black); }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800 antialiased">
 
-  <!-- Header -->
-  <header class="bg-custom-black text-custom-white py-10 sm:py-16 text-center shadow-lg rounded-b-lg">
+  <!-- Hero -->
+  <section class="relative bg-custom-black text-custom-white py-20 text-center">
     <div class="container mx-auto px-4">
-      <img src="assets/logo1.pdf" alt="Breisgau Automobile Logo"
-           class="mx-auto mb-4 rounded-lg shadow-md max-w-[500px] max-h-[205px]"
-           onerror="this.onerror=null; this.src='https://placehold.co/500x205/000/e63946?text=LOGO';" />
-      <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Breisgau Automobile</h1>
-      <p class="mt-2 text-lg italic text-custom-red">„Ihr Wohl ist unsere Zufriedenheit“</p>
-      <p class="mt-4 text-gray-300">Ihr zuverlässiger Partner für Gebrauchtwagen in Freiburg & Südbaden</p>
-    </div>
-  </header>
-
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-12 max-w-5xl">
-
-    <!-- Über uns -->
-    <section class="bg-white p-8 rounded-xl shadow-lg mb-12">
-      <h2 class="text-3xl font-bold mb-6 text-custom-red">Über uns</h2>
-      <p class="mb-6 text-lg leading-relaxed">
-        Bei <strong>Breisgau Automobile</strong> stehen Qualität, Transparenz und Kundenzufriedenheit an erster Stelle.
-        Unser Motto <em>„Ihr Wohl ist unsere Zufriedenheit“</em> begleitet uns bei jedem Schritt – vom ersten Beratungsgespräch bis zur Fahrzeugübergabe.
+      <img src="assets/logo1.svg" alt="Breisgau Automobile Logo" class="mx-auto mb-6 max-w-[400px]" />
+      <h1 class="text-5xl font-bold">Breisgau Automobile</h1>
+      <p class="mt-4 text-xl italic text-custom-red">„Ihr Wohl ist unsere Zufriedenheit“</p>
+      <p class="mt-6 max-w-2xl mx-auto text-lg text-gray-300">
+        Ihr zuverlässiger Partner für Gebrauchtwagen, Beratung und Service im Raum Freiburg & Südbaden.
       </p>
-      <ul class="space-y-3 text-lg">
-        <li class="flex items-center"><span class="text-custom-red mr-2">✔</span> An- und Verkauf von Fahrzeugen</li>
-        <li class="flex items-center"><span class="text-custom-red mr-2">✔</span> Vermittlung & individuelle Beratung</li>
-        <li class="flex items-center"><span class="text-custom-red mr-2">✔</span> Werkstattorganisation & TÜV-Abnahmen</li>
-        <li class="flex items-center"><span class="text-custom-red mr-2">✔</span> Fahrzeugaufbereitung & Überführungen</li>
-      </ul>
-    </section>
-
-    <!-- Vorteile -->
-    <section class="bg-white p-8 rounded-xl shadow-lg mb-12">
-      <h2 class="text-3xl font-bold mb-6 text-custom-red">Unsere Vorteile</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
-        <div class="space-y-4">
-          <p>✅ Faire Preise & transparente Angebote</p>
-          <p>✅ Persönliche Beratung durch erfahrene Experten</p>
-          <p>✅ Finanzierung & Versicherungslösungen</p>
-        </div>
-        <div class="space-y-4">
-          <p>✅ Regelmäßig geprüfte Fahrzeuge</p>
-          <p>✅ Regionale Nähe & schnelle Erreichbarkeit</p>
-          <p>✅ Kundenservice auch nach dem Kauf</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Kontakt -->
-    <section class="bg-white p-8 rounded-xl shadow-lg mb-12">
-      <h2 class="text-3xl font-bold mb-6 text-custom-red">Kontakt</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
-        <div>
-          <p class="mb-2"><strong>Adresse:</strong> Bundesstraße 2, 79238 Ehrenkirchen</p>
-          <p class="mb-2"><strong>Telefon:</strong> <a href="tel:+4917670786623" class="text-custom-red hover:underline">0176 70786623</a></p>
-          <p class="mb-2"><strong>E-Mail:</strong> <a href="mailto:info@breisgauerautomobile.de" class="text-custom-red hover:underline">info@breisgauerautomobile.de</a></p>
-        </div>
-        <div>
-          <p class="mb-2"><strong>Öffnungszeiten:</strong></p>
-          <p>Mo – Fr: 09:00 – 18:00 Uhr</p>
-          <p>Sa: 09:00 – 14:00 Uhr</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Fahrzeuge -->
-    <section class="bg-white p-8 rounded-xl shadow-lg text-center">
-      <h2 class="text-3xl font-bold mb-6 text-custom-red">Unsere Fahrzeuge</h2>
-      <p class="mb-6 text-lg leading-relaxed">
-        Entdecken Sie unsere aktuellen Angebote direkt auf <strong>mobile.de</strong>.
-      </p>
-      <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank"
-         class="inline-block bg-white text-custom-black font-bold py-3 px-8 rounded-full text-lg border border-custom-red hover:bg-custom-red hover:text-custom-white transition duration-300 ease-in-out shadow-md">
-        → Zu unseren Fahrzeugen auf mobile.de
+      <a href="#fahrzeuge" class="mt-8 inline-block bg-custom-red text-white px-8 py-3 rounded-full font-semibold hover:bg-red-700 transition">
+        Fahrzeuge entdecken
       </a>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Über uns -->
+  <section class="container mx-auto px-4 py-16 max-w-5xl">
+    <h2 class="text-3xl font-bold mb-6 text-custom-red">Über uns</h2>
+    <p class="text-lg leading-relaxed mb-6">
+      Bei <strong>Breisgau Automobile</strong> stehen Qualität, Transparenz und Kundenzufriedenheit im Mittelpunkt.
+      Wir bieten eine große Auswahl an gepflegten Gebrauchtwagen aller Marken und Preisklassen.
+      Unser Team begleitet Sie von der Beratung über die Finanzierung bis hin zur Fahrzeugübergabe.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-custom-red mb-2">Beratung</h3>
+        <p>Individuelle Beratung für Ihr Wunschfahrzeug – ehrlich und kompetent.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-custom-red mb-2">Service</h3>
+        <p>Werkstattorganisation, TÜV-Abnahmen und Fahrzeugaufbereitung aus einer Hand.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-custom-red mb-2">Vertrauen</h3>
+        <p>Faire Preise, geprüfte Fahrzeuge und ein starker Kundenservice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fahrzeuge Karussell -->
+  <section id="fahrzeuge" class="bg-white py-16">
+    <div class="container mx-auto px-4 max-w-6xl">
+      <h2 class="text-3xl font-bold mb-8 text-custom-red text-center">Unsere Fahrzeuge</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Beispiel-Fahrzeuge -->
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <img src="assets/auto1.jpg" alt="BMW 3er" class="w-full h-64 object-cover rounded mb-4">
+            <h3 class="text-xl font-semibold">BMW 3er</h3>
+            <p class="text-gray-600">EZ 2019 • 45.000 km • 22.900 €</p>
+          </div>
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <img src="assets/auto2.jpg" alt="VW Golf" class="w-full h-64 object-cover rounded mb-4">
+            <h3 class="text-xl font-semibold">VW Golf</h3>
+            <p class="text-gray-600">EZ 2020 • 30.000 km • 18.500 €</p>
+          </div>
+          <div class="swiper-slide bg-gray-100 p-6 rounded-lg shadow">
+            <img src="assets/auto3.jpg" alt="Mercedes C-Klasse" class="w-full h-64 object-cover rounded mb-4">
+            <h3 class="text-xl font-semibold">Mercedes C-Klasse</h3>
+            <p class="text-gray-600">EZ 2018 • 60.000 km • 25.900 €</p>
+          </div>
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section class="container mx-auto px-4 py-16 max-w-5xl">
+    <h2 class="text-3xl font-bold mb-6 text-custom-red">Kontakt</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+      <div>
+        <p><strong>Adresse:</strong> Bundesstraße 2, 79238 Ehrenkirchen</p>
+        <p><strong>Telefon:</strong> <a href="tel:+4917670786623" class="text-custom-red hover:underline">0176 70786623</a></p>
+        <p><strong>E-Mail:</strong> <a href="mailto:info@breisgauerautomobile.de" class="text-custom-red hover:underline">info@breisgauerautomobile.de</a></p>
+      </div>
+      <div>
+        <p><strong>Öffnungszeiten:</strong></p>
+        <p>Mo – Fr: 09:00 – 18:00 Uhr</p>
+        <p>Sa: 09:00 – 14:00 Uhr</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-custom-black text-custom-white py-6 text-center rounded-t-lg mt-12">
-    <div class="container mx-auto px-4">
-      <p class="text-sm">&copy; 2025 Breisgau Automobile. Alle Rechte vorbehalten.</p>
-    </div>
+  <footer class="bg-custom-black text-custom-white py-6 text-center">
+    <p class="text-sm">&copy; 2025 Breisgau Automobile. Alle Rechte vorbehalten.</p>
   </footer>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
+      }
+    });
+  </script>
 </body>
 </html>
