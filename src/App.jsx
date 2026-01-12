@@ -104,7 +104,7 @@ export default function App() {
     </span>
     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-md">
       Ihr Wohl <br />
-      Ist unsere <br />
+      Ist Unsere <br />
       <span className="text-[#e63946]">Zufriedenheit</span> 
     </h1>
     <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-10">
