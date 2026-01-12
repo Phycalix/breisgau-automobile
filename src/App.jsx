@@ -103,8 +103,9 @@ export default function App() {
       Ihr Partner in Ehrenkirchen
     </span>
     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-md">
-      Qualität erfahren, <br />
-      <span className="text-[#e63946]">Vertrauen</span> kaufen.
+      Ihr Wohl <br />
+      Ist unsere
+      <span className="text-[#e63946]">Zufriedenheit</span> 
     </h1>
     <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-10">
       <a href="https://home.mobile.de/BREISGAUERAUTOMOBILE#ses" target="_blank" className="bg-[#e63946] text-white px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-black transition shadow-xl">
